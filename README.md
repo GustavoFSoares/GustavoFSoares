@@ -2,6 +2,42 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=gustavofsoares&label=Profile%20views&color=0e75b6&style=flat" alt="gustavofsoares" /> </p>
 
+```js
+import { frontEndSkills, backEndSkills } from 'GustavoFSoares'
+
+const fullStackSkills = Object.assign(
+  frontEndSkills, 
+  backEndSkills
+)
+
+export const Me = () => {
+  const { 
+    VueJS, ReactJS, ReactNative, 
+    TypeScript, NodeJS, GraphQL,
+    Docker, Jest, Cypress,
+    Nuxt, Next,
+  } = fullStackSkills
+
+  const currentWork = {
+    role: 'Senior Software Engineer',
+    techs: [
+      VueJS, ReactJS, ReactNative, TypeScript,
+      NodeJS, GraphQL,
+      Jest, Cypress
+     ],
+  }
+  
+  const totalExperience = {
+    time: '7 years',
+    techs: [...currentWork.techs, Nuxt, Next, Docker],
+  }
+
+  return { currentWork, totalExperience }
+}
+
+export default FullStackSkills
+```
+
 <section>
   <p align="left"> 
     <a href="https://github.com/ryo-ma/github-profile-trophy">
